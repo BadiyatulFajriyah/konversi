@@ -1,70 +1,79 @@
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    background: linear-gradient(to right, #8EC5FC, #E0C3FC);
+    background: #0A0F1F; /* Hitam kebiruan */
     padding: 20px;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
     width: 90%;
-    max-width: 450px;
-    margin: auto;
-    background: white;
+    max-width: 500px;
+    background: #111827; /* Abu tua kehitaman */
     padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 140, 255, 0.3); /* Efek glow biru */
     transition: transform 0.3s ease-in-out;
+    color: #EAEAEA; /* Teks putih keabu-abuan */
+    border: 2px solid #008CFF; /* Garis biru neon */
 }
 
 .container:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 h1 {
-    color: #333;
+    color: #00A2FF; /* Biru neon */
     font-size: 24px;
     margin-bottom: 15px;
 }
 
 label {
     display: block;
-    margin-top: 12px;
-    font-weight: 600;
+    margin-top: 10px;
+    font-weight: 500;
     font-size: 16px;
-    color: #555;
+    color: #B0C7E4; /* Biru muda */
 }
 
 input, select {
     width: 100%;
     padding: 12px;
     margin: 8px 0;
-    border: 2px solid #ccc;
+    border: 2px solid #008CFF; /* Biru neon */
     border-radius: 8px;
     font-size: 16px;
+    background: #16243D; /* Biru kehitaman */
+    color: white;
     transition: all 0.3s ease-in-out;
 }
 
 input:focus, select:focus {
-    border-color: #6A5ACD;
-    box-shadow: 0px 0px 8px rgba(106, 90, 205, 0.5);
+    border-color: #00C8FF; /* Biru neon lebih terang */
+    box-shadow: 0px 0px 8px rgba(0, 200, 255, 0.6);
     outline: none;
 }
 
 button {
-    padding: 12px 25px;
+    width: 100%;
+    padding: 12px;
     border: none;
-    background: #6A5ACD;
+    background: #008CFF; /* Biru neon */
     color: white;
+    font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 15px;
     transition: background 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background: #5A4ACD;
+    background: #00C8FF; /* Biru lebih terang */
     transform: scale(1.05);
 }
 
@@ -72,17 +81,18 @@ button:hover {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
-    color: #333;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.9);
+    color: white;
+    padding: 14px;
+    background: rgba(0, 140, 255, 0.2);
     border-radius: 8px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 10px rgba(0, 140, 255, 0.3);
 }
 
 /* Responsif untuk HP */
 @media (max-width: 480px) {
     .container {
         width: 95%;
+        max-width: 500px;
         padding: 20px;
     }
 
@@ -91,6 +101,7 @@ button:hover {
     }
 
     button {
-        width: 100%;
+        font-size: 16px;
+        padding: 10px;
     }
 }
